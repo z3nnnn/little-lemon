@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from "./components/Header";
 import About from "./components/About";
 import Menu from './components/Menu';
@@ -10,10 +11,10 @@ function App() {
   return (
     <main className="container">
       <Header/>
-      <Reserve/>
-      <Menu/>
-      <Reviews/>
-      <About/>
+      <section id="reserve"><Reserve/></section>
+      <section id="menu"><Menu/></section>
+      <section id="reviews"><Reviews/></section>
+      <section id="about"><About/></section>
       <Footer/>
     </main>
   );
