@@ -310,7 +310,48 @@
 .footer {
   grid-area: footer;
   background-color: #cfcfcf;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
 
 }
+
+.footer>img{
+  max-height: 260px;
+  width: auto;
+  border-radius: 4px;
+  margin: 2rem;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+footer li{
+  font-family: "Karla", "sans-serif";
+  font-weight: 500;
+  font-size: 15px;
+  padding: 2px;
+}
+
+.footer h2{
+  font-family: "Markazi Text", "serif";
+  font-size: 30px;
+  font-weight: 500;
+
+}
+
+.doormat ul{
+  ;
+}
+
+
+
+
 
 

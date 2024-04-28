@@ -1,5 +1,4 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from "./components/Header";
 import About from "./components/About";
 import Menu from './components/Menu';
