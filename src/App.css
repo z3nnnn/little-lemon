@@ -49,6 +49,7 @@
   background-color: #495e57;
   display: flex;
   justify-content: center;
+  column-gap: 60px;
 }
 
 .description{
@@ -56,7 +57,6 @@
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin-left: 28%;
 }
 
 .description h2{
@@ -91,22 +91,33 @@
 
 .description button{
   background-color: #f4ce14;
+  color:#333;
   border: none;
   text-align: center;
   text-decoration: none;
   font-family: "Karla", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 19px;
-  padding: 20px 0px;
+  padding: 20px 20px;
   border-radius: 12px ;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  transition: 0.4s ease;
 
 }
 
+.description button:hover {
+  background-color: #333; /* Change color on hover */
+  color:#f4ce14
+  
+}
+
+
+
 .reserveimg {
   max-width: 100%;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .reserveimg>img{
@@ -212,7 +223,7 @@
 
 .review {
   grid-area: review;
-  background-color: #cfcfcf ;
+  background-color: #495e57 ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,6 +232,7 @@
 .review-heading>h2{
   font-family: "Markazi Text", "serif";
   font-size: 50px;
+  color:#e8e7df
 }
 
 .review-cards{
@@ -273,6 +285,7 @@
 
 .about {
   grid-area: about;
+  background-color: #e8e7df;
   justify-content: center;
   gap: 45px;
   display: flex;
@@ -309,7 +322,7 @@
 
 .footer {
   grid-area: footer;
-  background-color: #cfcfcf;
+  background-color: #495e57;
   display: flex;
   justify-content: center;
   gap: 35px;
@@ -337,19 +350,181 @@ footer li{
   font-weight: 500;
   font-size: 15px;
   padding: 2px;
+  color:#e8e7df
 }
 
 .footer h2{
   font-family: "Markazi Text", "serif";
   font-size: 30px;
   font-weight: 500;
+  color:#e8e7df;
+  line-height: 0.8;
+  margin-top: 35px;
 
 }
 
-.doormat ul{
-  ;
+
+.reservation-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 80px 0;
+  background-color:#a0ac9e;
 }
 
+.text {
+  margin-top: 100px;
+  color: #fff;
+  width: 60%;
+}
+
+.form-container {
+  padding: 20px;
+  background-color:#ffffff; 
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.form-container>h2{
+  font-family: "Markazi Text";
+  color:#495e57;
+  font-weight: 500;
+  font-size:50px;
+  text-align: center;
+}
+
+.form {
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  color: #333333;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.form h1 {
+  font-size: 24pt;
+  margin-bottom: 7px;
+}
+
+.form p {
+  font-size: smaller;
+  margin-bottom: 30px;
+}
+
+.form label{
+  font-family: "Markazi Text", "sans-serf";
+}
+
+
+fieldset {
+  border: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.field label {
+  font-family: "Karla", "sans-serif";
+  font-size: 18px;
+  margin: 0 0 5px 0px;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid rgba(51,51,51,0.3);
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type=date] {
+  color: #949494
+}
+
+input[type=time]{
+  color:#949494
+}
+
+.guestsdate {
+  display: grid;
+  grid-template-columns: 68% 28%;
+  gap: 4%;
+}
+
+.occasion {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  padding-right: 10px;
+  border: 1px solid rgba(51,51,51,0.3);
+  border-radius: 5px;
+}
+
+select {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  color: #949494;
+}
+
+.reserve-btn {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color:#fff;
+}
+
+.reserve-btn:hover {
+  background-color: #495e57;
+  transition: 0.3s;
+}
+
+.error-message {
+  font-size: 15px;
+  color: red;
+  margin-top: 5px;
+}
+
+
+
+  .text {
+      width: 100%;
+      margin-top: 50px;
+  }
+
+  .text p {
+      margin-bottom: 0;
+  }
+
+  .form {
+      width: 100%;
+      margin-top: -50px
+  }
+
+  .guestsdate {
+      display: flex;
+      flex-direction: column;
+  }
 
 
 

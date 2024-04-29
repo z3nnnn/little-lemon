@@ -1,4 +1,5 @@
 import bread from '../images/four bread.jpg'
+import { Link }from 'react-router-dom'
 
 function Footer() {
     return(
@@ -7,12 +8,24 @@ function Footer() {
             <section className="doormat">
                 <h2>Doormat<br/>Navigation</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reserve">Reservations</a></li>
-                    <li><a href="#">Order Online</a></li>
-                    <li><a href="#">Login</a></li>
+                    <Link to="/">
+                        <li>Home</li>
+                    </Link>
+                    <Link to="/">
+                        <li>About</li>
+                    </Link>
+                    <Link to="/">
+                        <li>Menu</li>
+                    </Link>
+                    <Link to="/reservation">
+                        <li>Reservations</li>
+                    </Link>
+                    <Link to="/">
+                        <li>Order Online</li>
+                    </Link>
+                    <Link to="/">
+                        <li>Login</li>
+                    </Link>
                 </ul>
             </section>
             <section className="contact">
